@@ -105,7 +105,7 @@ func Draw(w http.ResponseWriter, req *http.Request) {
 		url = "http://swtch.com/qr"
 	}
 	if req.FormValue("upload") == "1" {
-		w.WriteHeader(http.StatusForbidden)
+		// w.WriteHeader(http.StatusForbidden)
 		// w.Write([]byte("Uploads disabled, sorry.\n"))
 		upload(w, req, url)
 		return
